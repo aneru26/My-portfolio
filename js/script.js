@@ -87,7 +87,8 @@ window.addEventListener('scroll', function() {
     ["images/scheduling_system/campus1.jfif", "images/scheduling_system/campus2.jfif", "images/scheduling_system/campus3.jfif"],
     ["images/sanitation_system/sanitation2.jfif", "images/sanitation_system/sanitation3.jfif", "images/sanitation_system/sanitation4.jfif","images/sanitation_system/sanitation5.jfif"],
     ["images/Advising_system/advising2.jfif", "images/Advising_system/advising3.jfif", "images/Advising_system/advising4.jfif"],
-    ["images/eccommerce/eccommerce2.jfif", "images/eccommerce/eccommerce3.jfif","images/eccommerce/eccommerce4.jfif","images/eccommerce/eccommerce5.jfif"]
+    ["images/eccommerce/eccommerce2.jfif", "images/eccommerce/eccommerce3.jfif","images/eccommerce/eccommerce4.jfif","images/eccommerce/eccommerce5.jfif"],
+    ["images/job_hunting/jobhunting2.jfif","images/job_hunting/jobhunting3.jfif","images/job_hunting/jobhunting4.jfif","images/job_hunting/jobhunting5.jfif","images/job_hunting/jobhunting6.jfif"]
 ];
 
     function openGallery(index) {
