@@ -7,6 +7,9 @@
     <title>Nel</title>
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <!-- Font Awesome CDN -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 </head>
 <body>
     
@@ -19,6 +22,7 @@
         <nav class="navbar">
             <a href="#home" class="active">Home</a>
             <a href="#about">About</a>
+            <a href="#projects">Projects</a>
             <a href="#education">Education</a>
             <a href="#skills">Skills</a>
             <a href="#contact">Contact</a>
@@ -76,11 +80,130 @@
                 </p>
 
                 <div class="btn-box btns">
-                    <a href="#" class="btn">Read More</a>
+                    <a href="#contact" class="btn">Let's Talk</a>
                     <span class="animate scroll" style="--i:5;"></span>
                 </div>
             </div>
         </section>
+
+
+     <!-- My Projects Section Design (Carousel Style) -->
+<section class="education full-screen-projects" id="projects">
+    <h2 class="heading">My <span>Projects</span><span class="animate scroll" style="--i:1;"></span></h2>
+
+    <div class="carousel-container">
+        <div class="project-carousel" id="projectCarousel">
+
+            <!-- Example Project Slide -->
+         <div class="project-slide active">
+    <div class="education-content">
+        <div class="content" onclick="openGallery(0)">
+            <div class="year"><i class='bx bxs-calendar'></i> 2024 - 2025</div>
+            <h3>Scheduling System</h3>
+            <img src="images/scheduling_system/schedule_system1.jfif" alt="Project Image" class="project-thumbnail">
+            
+            <p>This Laravel-based scheduling system is designed to assist teachers in assigning rooms for their classes.It features real-time room availability checking, ensuring that only vacant rooms are displayed for booking to prevent schedule conflicts and improve classroom management.</p>
+            
+            <!-- Tech Stack Icons -->
+            <div class="tech-stack-icons">
+                <i class="fab fa-laravel" title="Laravel"></i>
+                <i class="fas fa-database" title="MySQL"></i>
+                <i class="fab fa-php" title="PHP"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+                <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind CSS" title="Tailwind CSS" class="tailwind-icon" />
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+            <div class="project-slide">
+                <div class="education-content">
+                    <div class="content" onclick="openGallery(1)">
+                        <div class="year"><i class='bx bxs-calendar'></i> 2023 - 2024</div>
+                        <h3>Sanitation Inspection System </h3>
+                        <img src="images/sanitation_system/sanitation1.jfif" alt="Project Image" class="project-thumbnail">
+                        <p>The Sanitation Compliance Management System is a tool or resource that provides guidance and information regarding facility safety regulations and requirements. It is typically designed to assist establishments, such as broiler, layer, duck , quail ,swine in understanding and complying with local, state, or national safety laws and regulations.</p>
+
+                        <div class="tech-stack-icons">
+                <i class="fab fa-laravel" title="Laravel"></i>
+                <i class="fas fa-database" title="MySQL"></i>
+                <i class="fab fa-php" title="PHP"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+                 <i class="fab fa-bootstrap" title="Bootstrap"></i>
+              
+            </div>
+
+                    </div>
+                </div>
+            </div>
+
+              <div class="project-slide">
+                <div class="education-content">
+                    <div class="content" onclick="openGallery(2)">
+                        <div class="year"><i class='bx bxs-calendar'></i> 2024 - 2025</div>
+                        <h3>Curiculum Advising System</h3>
+                        <img src="images/Advising_system/advising1.jfif" alt="Project Image" class="project-thumbnail">
+                        <p>The Curriculum Advising System assists the chairperson in identifying each student's remaining subjects for enrollment based on their academic progress. Built with Python, it analyzes course prerequisites and completed subjects to generate an accurate list of eligible courses for the next semester.</p>
+
+
+                        <div class="tech-stack-icons">
+                <i class="fab fa-laravel" title="Laravel"></i>
+                <i class="fas fa-database" title="MySQL"></i>
+                <i class="fab fa-php" title="PHP"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+                 <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind CSS" title="Tailwind CSS" class="tailwind-icon" />
+                  <img src="https://www.svgrepo.com/show/354238/python.svg" alt="Python" title="Python" class="python-icon" />
+                
+              
+            </div>
+
+                    </div>
+                </div>
+            </div>
+
+
+                          <div class="project-slide">
+                <div class="education-content">
+                    <div class="content" onclick="openGallery(3)">
+                        <div class="year"><i class='bx bxs-calendar'></i> 2024 - 2025</div>
+                        <h3>Eccommerce System</h3>
+                        <img src="images/eccommerce/eccommerce1.jfif" alt="Project Image" class="project-thumbnail">
+                        <p>The Curriculum Advising System assists the chairperson in identifying each student's remaining subjects for enrollment based on their academic progress. Built with Python, it analyzes course prerequisites and completed subjects to generate an accurate list of eligible courses for the next semester.</p>
+
+
+                        <div class="tech-stack-icons">
+                <i class="fab fa-laravel" title="Laravel"></i>
+                <i class="fas fa-database" title="MySQL"></i>
+                <i class="fab fa-php" title="PHP"></i>
+                <i class="fab fa-js" title="JavaScript"></i>
+                 <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind CSS" title="Tailwind CSS" class="tailwind-icon" />
+              
+            </div>
+
+                    </div>
+                </div>
+            </div>
+            <!-- Add more project slides similarly with unique image paths -->
+        </div>
+
+        <!-- Navigation Arrows -->
+        <div class="carousel-controls">
+            <button class="arrow left" onclick="prevProject()">&#10094;</button>
+            <button class="arrow right" onclick="nextProject()">&#10095;</button>
+        </div>
+    </div>
+
+    <!-- Modal Gallery -->
+    <div id="galleryModal" class="gallery-modal">
+        <span class="close" onclick="closeGallery()">&times;</span>
+        <div class="gallery-images" id="galleryImages"></div>
+    </div>
+</section>
+
+
 
         <!--Education Section Desing-->
 
@@ -256,7 +379,7 @@
                             </div>
 
                             <div class="progress">
-                                <h3>SEO Marketing <span>75%</span></h3>
+                                <h3>Vue Js <span>65%</span></h3>
                                     <div class="bar"><span></span></div>
                             </div>
                         </div>
@@ -269,50 +392,52 @@
 
         <!--Contact Section Design-->
 
-        <section class="contact" id="contact">
-            <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
+<section class="contact" id="contact">
+  <h2 class="heading">Contact <span>Me!</span><span class="animate scroll" style="--i:1;"></span></h2>
 
-            <form action="#">
-                <div class="input-box">
-                    <div class="input-field">
-                        <input type="text" placeholder="Full Name" required>
-                        <span class="focus"></span>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Email Address" required>
-                        <span class="focus"></span>
-                    </div>
+  <form action="https://formspree.io/f/xkgbbrzg" method="POST">
+    
+    <!-- Honeypot Field (Anti-spam) -->
+    <input type="text" name="_gotcha" style="display:none" tabindex="-1" autocomplete="off">
 
-                    <span class="animate scroll" style="--i:1;"></span>
-                </div>
+    <div class="input-box">
+      <div class="input-field">
+        <input type="text" name="name" placeholder="Full Name" required>
+        <span class="focus"></span>
+      </div>
+      <div class="input-field">
+        <input type="email" name="email" placeholder="Email Address" required>
+        <span class="focus"></span>
+      </div>
+      <span class="animate scroll" style="--i:1;"></span>
+    </div>
 
-                <div class="input-box">
-                    <div class="input-field">
-                        <input type="number" placeholder="Mobile Number" required>
-                        <span class="focus"></span>
-                    </div>
-                    <div class="input-field">
-                        <input type="text" placeholder="Email Subject" required>
-                        <span class="focus"></span>
-                    </div>
+    <div class="input-box">
+      <div class="input-field">
+        <input type="tel" name="phone" placeholder="Mobile Number" required>
+        <span class="focus"></span>
+      </div>
+      <div class="input-field">
+        <input type="text" name="subject" placeholder="Email Subject" required>
+        <span class="focus"></span>
+      </div>
+      <span class="animate scroll" style="--i:5;"></span>
+    </div>
 
-                    <span class="animate scroll" style="--i:5;"></span>
-                </div>
+    <div class="textarea-field">
+      <textarea name="message" cols="30" rows="10" placeholder="Your Message" required></textarea>
+      <span class="focus"></span>
+      <span class="animate scroll" style="--i:7;"></span>
+    </div>
 
-                <div class="textarea-field">
-                    <textarea name="" id="" cols="30" rows="10" placeholder="Your Message" required></textarea>
-                    <span class="focus"></span>
+    <div class="btn-box btns">
+      <button type="submit" class="btn">Submit</button>
+      <span class="animate scroll" style="--i:9;"></span>
+    </div>
+  </form>
+</section>
 
-                    <span class="animate scroll" style="--i:7;"></span>
-                </div>
 
-                <div class="btn-box btns">
-                    <button type="submit" class="btn">Submit</button>
-
-                    <span class="animate scroll" style="--i:9;"></span>
-                </div>
-            </form>
-        </section>
 
         <!--footer design-->
 

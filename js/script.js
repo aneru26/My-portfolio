@@ -57,3 +57,53 @@ window.addEventListener('scroll', function() {
 });
 
 }
+
+
+// Projects Scripts
+    let currentSlide = 0;
+    const slides = document.querySelectorAll('.project-slide');
+
+    function showSlide(index) {
+        slides.forEach((slide, i) => {
+            slide.classList.remove('active');
+            if (i === index) slide.classList.add('active');
+        });
+    }
+
+    function nextProject() {
+        currentSlide = (currentSlide + 1) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    function prevProject() {
+        currentSlide = (currentSlide - 1 + slides.length) % slides.length;
+        showSlide(currentSlide);
+    }
+
+    showSlide(currentSlide);
+
+    // Gallery Modal Logic
+  const galleryImages = [
+    ["images/scheduling_system/campus1.jfif", "images/scheduling_system/campus2.jfif", "images/scheduling_system/campus3.jfif"],
+    ["images/sanitation_system/sanitation2.jfif", "images/sanitation_system/sanitation3.jfif", "images/sanitation_system/sanitation4.jfif","images/sanitation_system/sanitation5.jfif"],
+    ["images/Advising_system/advising2.jfif", "images/Advising_system/advising3.jfif", "images/Advising_system/advising4.jfif"],
+    ["images/eccommerce/eccommerce2.jfif", "images/eccommerce/eccommerce3.jfif","images/eccommerce/eccommerce4.jfif","images/eccommerce/eccommerce5.jfif"]
+];
+
+    function openGallery(index) {
+        const modal = document.getElementById('galleryModal');
+        const container = document.getElementById('galleryImages');
+        container.innerHTML = "";
+
+        galleryImages[index].forEach(src => {
+            const img = document.createElement("img");
+            img.src = src;
+            container.appendChild(img);
+        });
+
+        modal.style.display = "block";
+    }
+
+    function closeGallery() {
+        document.getElementById('galleryModal').style.display = "none";
+    }
