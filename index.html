@@ -2,13 +2,22 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Performance optimizations -->
+    <meta name="color-scheme" content="dark light">
+    <meta name="theme-color" content="#081b29">
+    
     <title>Nel</title>
+    
+    <!-- Preload critical fonts for better performance -->
+    <link rel="preload" href="https://unpkg.com/boxicons@2.1.4/fonts/boxicons.woff2" as="font" type="font/woff2" crossorigin>
+    
     <link rel="stylesheet" href="css/style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <!-- Font Awesome CDN -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
 
 </head>
 <body>
@@ -62,18 +71,21 @@
             <span class="animate home-img" style="--i:7;"></span>
         </section>
 
-        <!--About Section Design-->
+        <!--About Section Design (Modern Layout)-->
 
         <section class="about" id="about">
             <h2 class="heading">About <span>Me</span><span class="animate scroll" style="--i:1;"></span></h2>
 
-            <div class="about-img">
-                <img src="images/about1.jpg" alt="">
-                <span class="circle-spin"> </span>  
-                <span class="animate scroll" style="--i:2;"></span>
-            </div>
+            <div class="about-container">
+                <div class="about-img">
+                    <div class="about-img-wrapper">
+                        <img src="images/about1.jpg" alt="Arnel Tagupa">
+                        <span class="circle-spin"></span>
+                    </div>
+                    <span class="animate scroll" style="--i:2;"></span>
+                </div>
 
-            <div class="about-content">
+                <div class="about-content">
                 <h3>FullStack Developer!<span class="animate scroll" style="--i:3;"></span></h3>
                  <p>I am a skilled Laravel and WordPress developer with hands-on experience in building modern, dynamic, and responsive web applications. From custom Laravel solutions to fully functional WordPress websites, I specialize in creating scalable back-end systems and user-friendly front-end designs. My expertise includes integrating APIs, optimizing performance, and ensuring security across platforms. I’m passionate about clean code, problem solving, and turning ideas into real world digital solutions. With a strong foundation in full-stack development, I'm ready to deliver high-quality results and collaborate on impactful projects.
         <span class="animate scroll" style="--i:4;"></span>
@@ -82,6 +94,7 @@
                 <div class="btn-box btns">
                     <a href="#contact" class="btn">Let's Talk</a>
                     <span class="animate scroll" style="--i:5;"></span>
+                </div>
                 </div>
             </div>
         </section>
@@ -791,9 +804,9 @@
             </div>
         </footer>
 
-        <script
+    <script src="js/script.js"></script>
+    <script
   src='https://cdn.jotfor.ms/agent/embedjs/01977dad63357645a5b96006ed3c5bd3004e/embed.js?skipWelcome=1&maximizable=1'>
 </script>
-    <script src="js/script.js"></script>
 </body>
 </html>
