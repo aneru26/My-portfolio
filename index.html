@@ -87,332 +87,643 @@
         </section>
 
 
-     <!-- My Projects Section Design (Carousel Style) -->
-<section class="education full-screen-projects" id="projects">
+     <!-- My Projects Section Design (Modern Grid Layout) -->
+<section class="projects" id="projects">
     <h2 class="heading">My <span>Projects</span><span class="animate scroll" style="--i:1;"></span></h2>
 
-    <div class="carousel-container">
-        <div class="project-carousel" id="projectCarousel">
-
-            <!-- Example Project Slide -->
-         <div class="project-slide active">
-    <div class="education-content">
-        <div class="content" onclick="openGallery(0)">
-            <div class="year"><i class='bx bxs-calendar'></i> 2024 - 2025</div>
-            <h3>Scheduling System</h3>
-            <img src="images/scheduling_system/schedule_system1.jfif" alt="Project Image" class="project-thumbnail">
+    <div class="projects-container">
+        <div class="projects-grid">
             
-            <p>This Laravel-based scheduling system is designed to assist teachers in assigning rooms for their classes.It features real-time room availability checking, ensuring that only vacant rooms are displayed for booking to prevent schedule conflicts and improve classroom management.</p>
-            
-            <!-- Tech Stack Icons -->
-            <div class="tech-stack-icons">
-                <i class="fab fa-laravel" title="Laravel"></i>
-                <i class="fas fa-database" title="MySQL"></i>
-                <i class="fab fa-php" title="PHP"></i>
-                <i class="fab fa-js" title="JavaScript"></i>
-                <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind CSS" title="Tailwind CSS" class="tailwind-icon" />
-            </div>
-        </div>
-    </div>
-</div>
-
-
-
-
-            <div class="project-slide">
-                <div class="education-content">
-                    <div class="content" onclick="openGallery(1)">
-                        <div class="year"><i class='bx bxs-calendar'></i> 2023 - 2024</div>
-                        <h3>Sanitation Inspection System </h3>
-                        <img src="images/sanitation_system/sanitation1.jfif" alt="Project Image" class="project-thumbnail">
-                        <p>The Sanitation Compliance Management System is a tool or resource that provides guidance and information regarding facility safety regulations and requirements. It is typically designed to assist establishments, such as broiler, layer, duck , quail ,swine in understanding and complying with local, state, or national safety laws and regulations.</p>
-
+            <!-- Project Card 1 -->
+            <div class="project-card" onclick="openGallery(0)">
+                <div class="project-image">
+                    <img src="images/scheduling_system/schedule_system1.jfif" alt="Scheduling System" class="project-thumbnail">
+                    <div class="project-overlay">
+                        <div class="project-actions">
+                            <span class="view-gallery">View Gallery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-year"><i class='bx bxs-calendar'></i> 2024 - 2025</span>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <h3 class="project-title">Scheduling System</h3>
+                    <p class="project-description">
+                        This Laravel-based scheduling system is designed to assist teachers in assigning rooms for their classes. It features real-time room availability checking, ensuring that only vacant rooms are displayed for booking to prevent schedule conflicts and improve classroom management.
+                    </p>
+                    <div class="tech-stack">
                         <div class="tech-stack-icons">
-                <i class="fab fa-laravel" title="Laravel"></i>
-                <i class="fas fa-database" title="MySQL"></i>
-                <i class="fab fa-php" title="PHP"></i>
-                <i class="fab fa-js" title="JavaScript"></i>
-                 <i class="fab fa-bootstrap" title="Bootstrap"></i>
-              
-            </div>
-
+                            <i class="fab fa-laravel" title="Laravel"></i>
+                            <i class="fas fa-database" title="MySQL"></i>
+                            <i class="fab fa-php" title="PHP"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                            <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind CSS" title="Tailwind CSS" class="tech-icon" />
+                        </div>
                     </div>
                 </div>
             </div>
 
-              <div class="project-slide">
-                <div class="education-content">
-                    <div class="content" onclick="openGallery(2)">
-                        <div class="year"><i class='bx bxs-calendar'></i> 2024 - 2025</div>
-                        <h3>Curiculum Advising System</h3>
-                        <img src="images/Advising_system/advising1.jfif" alt="Project Image" class="project-thumbnail">
-                        <p>The Curriculum Advising System assists the chairperson in identifying each student's remaining subjects for enrollment based on their academic progress. Built with Python, it analyzes course prerequisites and completed subjects to generate an accurate list of eligible courses for the next semester.</p>
-
-
+            <!-- Project Card 2 -->
+            <div class="project-card" onclick="openGallery(1)">
+                <div class="project-image">
+                    <img src="images/sanitation_system/sanitation1.jfif" alt="Sanitation Inspection System" class="project-thumbnail">
+                    <div class="project-overlay">
+                        <div class="project-actions">
+                            <span class="view-gallery">View Gallery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-year"><i class='bx bxs-calendar'></i> 2023 - 2024</span>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <h3 class="project-title">Sanitation Inspection System</h3>
+                    <p class="project-description">
+                        The Sanitation Compliance Management System is a tool that provides guidance and information regarding facility safety regulations and requirements. It assists establishments like broiler, layer, duck, quail, swine in understanding and complying with safety laws and regulations.
+                    </p>
+                    <div class="tech-stack">
                         <div class="tech-stack-icons">
-                <i class="fab fa-laravel" title="Laravel"></i>
-                <i class="fas fa-database" title="MySQL"></i>
-                <i class="fab fa-php" title="PHP"></i>
-                <i class="fab fa-js" title="JavaScript"></i>
-                 <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind CSS" title="Tailwind CSS" class="tailwind-icon" />
-                  <img src="https://www.svgrepo.com/show/354238/python.svg" alt="Python" title="Python" class="python-icon" />
-                
-              
-            </div>
-
+                            <i class="fab fa-laravel" title="Laravel"></i>
+                            <i class="fas fa-database" title="MySQL"></i>
+                            <i class="fab fa-php" title="PHP"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                            <i class="fab fa-bootstrap" title="Bootstrap"></i>
+                        </div>
                     </div>
                 </div>
             </div>
 
-
-                          <div class="project-slide">
-                <div class="education-content">
-                    <div class="content" onclick="openGallery(3)">
-                        <div class="year"><i class='bx bxs-calendar'></i> 2024 - 2025</div>
-                        <h3>Eccommerce System</h3>
-                        <img src="images/eccommerce/eccommerce1.jfif" alt="Project Image" class="project-thumbnail">
-                        <p>The Curriculum Advising System assists the chairperson in identifying each student's remaining subjects for enrollment based on their academic progress. Built with Python, it analyzes course prerequisites and completed subjects to generate an accurate list of eligible courses for the next semester.</p>
-
-
+            <!-- Project Card 3 -->
+            <div class="project-card" onclick="openGallery(2)">
+                <div class="project-image">
+                    <img src="images/Advising_system/advising1.jfif" alt="Curriculum Advising System" class="project-thumbnail">
+                    <div class="project-overlay">
+                        <div class="project-actions">
+                            <span class="view-gallery">View Gallery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-year"><i class='bx bxs-calendar'></i> 2024 - 2025</span>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <h3 class="project-title">Curriculum Advising System</h3>
+                    <p class="project-description">
+                        The Curriculum Advising System assists the chairperson in identifying each student's remaining subjects for enrollment based on their academic progress. Built with Python, it analyzes course prerequisites and completed subjects to generate an accurate list of eligible courses.
+                    </p>
+                    <div class="tech-stack">
                         <div class="tech-stack-icons">
-                <i class="fab fa-laravel" title="Laravel"></i>
-                <i class="fas fa-database" title="MySQL"></i>
-                <i class="fab fa-php" title="PHP"></i>
-                <i class="fab fa-js" title="JavaScript"></i>
-                 <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind CSS" title="Tailwind CSS" class="tailwind-icon" />
-              
-            </div>
-
+                            <i class="fab fa-laravel" title="Laravel"></i>
+                            <i class="fas fa-database" title="MySQL"></i>
+                            <i class="fab fa-php" title="PHP"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                            <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind CSS" title="Tailwind CSS" class="tech-icon" />
+                            <img src="https://www.svgrepo.com/show/354238/python.svg" alt="Python" title="Python" class="tech-icon" />
+                        </div>
                     </div>
                 </div>
             </div>
 
-              <div class="project-slide">
-                <div class="education-content">
-                    <div class="content" onclick="openGallery(4)">
-                        <div class="year"><i class='bx bxs-calendar'></i> 2024 - 2025</div>
-                        <h3>Internship hunting System with Resume maker and Time Tracking</h3>
-                        <img src="images/job_hunting/jobhunting1.jfif" alt="Project Image" class="project-thumbnail">
-                        <p>
-This Internship Hunting System is designed to help students easily search for internship opportunities and build professional resumes using a built-in resume maker. On the company side, the system includes task tracking and time tracking features to monitor the progress and performance of student interns effectively.
-</p>
-
-
+            <!-- Project Card 4 -->
+            <div class="project-card" onclick="openGallery(3)">
+                <div class="project-image">
+                    <img src="images/eccommerce/eccommerce1.jfif" alt="E-commerce System" class="project-thumbnail">
+                    <div class="project-overlay">
+                        <div class="project-actions">
+                            <span class="view-gallery">View Gallery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-year"><i class='bx bxs-calendar'></i> 2024 - 2025</span>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <h3 class="project-title">E-commerce System</h3>
+                    <p class="project-description">
+                        A comprehensive e-commerce platform built with Laravel featuring user authentication, product management, shopping cart functionality, payment integration, and order management. Designed with modern UI/UX principles for optimal user experience.
+                    </p>
+                    <div class="tech-stack">
                         <div class="tech-stack-icons">
-                <i class="fab fa-laravel" title="Laravel"></i>
-                <i class="fas fa-database" title="MySQL"></i>
-                <i class="fab fa-php" title="PHP"></i>
-                <i class="fab fa-js" title="JavaScript"></i>
-                 <i class="fab fa-bootstrap" title="Bootstrap"></i>
-
-              
-            </div>
-
+                            <i class="fab fa-laravel" title="Laravel"></i>
+                            <i class="fas fa-database" title="MySQL"></i>
+                            <i class="fab fa-php" title="PHP"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                            <img src="https://www.svgrepo.com/show/374118/tailwind.svg" alt="Tailwind CSS" title="Tailwind CSS" class="tech-icon" />
+                        </div>
                     </div>
                 </div>
             </div>
-            <!-- Add more project slides similarly with unique image paths -->
-        </div>
 
-        <!-- Navigation Arrows -->
-        <div class="carousel-controls">
-            <button class="arrow left" onclick="prevProject()">&#10094;</button>
-            <button class="arrow right" onclick="nextProject()">&#10095;</button>
+            <!-- Project Card 5 -->
+            <div class="project-card" onclick="openGallery(4)">
+                <div class="project-image">
+                    <img src="images/job_hunting/jobhunting1.jfif" alt="Internship Hunting System" class="project-thumbnail">
+                    <div class="project-overlay">
+                        <div class="project-actions">
+                            <span class="view-gallery">View Gallery</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="project-content">
+                    <div class="project-meta">
+                        <span class="project-year"><i class='bx bxs-calendar'></i> 2024 - 2025</span>
+                        <span class="project-status">Completed</span>
+                    </div>
+                    <h3 class="project-title">Internship Hunting System</h3>
+                    <p class="project-description">
+                        This comprehensive system helps students search for internship opportunities and build professional resumes using a built-in resume maker. Features task tracking and time tracking for companies to monitor student intern progress and performance effectively.
+                    </p>
+                    <div class="tech-stack">
+                        <div class="tech-stack-icons">
+                            <i class="fab fa-laravel" title="Laravel"></i>
+                            <i class="fas fa-database" title="MySQL"></i>
+                            <i class="fab fa-php" title="PHP"></i>
+                            <i class="fab fa-js" title="JavaScript"></i>
+                            <i class="fab fa-bootstrap" title="Bootstrap"></i>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
         </div>
     </div>
 
     <!-- Modal Gallery -->
     <div id="galleryModal" class="gallery-modal">
         <span class="close" onclick="closeGallery()">&times;</span>
-        <div class="gallery-images" id="galleryImages"></div>
+        <div class="gallery-container">
+            <div class="gallery-images" id="galleryImages"></div>
+        </div>
     </div>
 </section>
 
 
 
-        <!--Education Section Desing-->
-
+        <!--Education Section Design (Modern Timeline Layout)-->
         <section class="education" id="education">
             <h2 class="heading">My <span>Journey</span><span class="animate scroll" style="--i:1;"></span></h2>
 
-            <div class="education-row">
-                <div class="education-column">
-                    <h3 class="title">Education<span class="animate scroll" style="--i:2;"></span></h3>
-
-
-                    <div class="education-box">
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year">
-                                    <i class='bx bxs-calendar' ></i> Ongoing
+            <div class="journey-container">
+                <!-- Education Section -->
+                <div class="journey-section">
+                    <h3 class="section-title">
+                        <i class='bx bxs-graduation'></i>
+                        Education
+                        <span class="animate scroll" style="--i:2;"></span>
+                    </h3>
+                    
+                    <div class="timeline-cards">
+                        <!-- Education Card 1 -->
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="year-badge">
+                                    <i class='bx bxs-calendar'></i>
+                                    <span>2018 - 2025</span>
                                 </div>
-
-                                <h3>BSIT - Caraga State University</h3>
-                                <p>I'm a BSIT student at Caraga State University right now. I've been exposed to a variety of
-                                    information technology issues throughout my academic career, giving me a strong
-                                    foundation in subjects like programming, networking, and database management. I now
-                                    have the skills and knowledge required to succeed in the rapidly changing sector of IT
-                                    thanks to my schooling.</p>
+                                <div class="status-badge completed">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title">Bachelor of Science in Information Technology</h4>
+                                <h5 class="institution">Caraga State University</h5>
+                                <p class="description">
+                                    Successfully completed my BSIT degree at Caraga State University from 2018 to 2025. Throughout my academic journey, I gained extensive exposure to various information technology concepts, building a strong foundation in programming, networking, and database management. This education equipped me with the essential skills and knowledge needed to thrive in the rapidly evolving IT industry.
+                                </p>
+                                <div class="highlights">
+                                    <span class="highlight-tag">Programming</span>
+                                    <span class="highlight-tag">Networking</span>
+                                    <span class="highlight-tag">Database Management</span>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year">
-                                    <i class='bx bxs-calendar' ></i> 2012 - 2016
+                        <!-- Education Card 2 -->
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="year-badge">
+                                    <i class='bx bxs-calendar'></i>
+                                    <span>2016 - 2018</span>
                                 </div>
-
-                                <h3>CHS - Butuan City School Of Arts And Trades</h3>
-                                <p>I studied computer hardware service from 2012 to 2015 as a student at Butuan City School Of Arts And Trades. I immersed myself in the complexities of computer hardware during
-                                    this time and developed useful diagnostic and repair abilities. I was able to build a solid
-                                    foundation in hardware components, troubleshooting strategies, and system maintenance
-                                    throughout my time at the institute, which prepared me for my later pursuits in the industry</p>
+                                <div class="status-badge completed">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title">Computer Hardware Servicing</h4>
+                                <h5 class="institution">Saint Joseph Institute of Technology</h5>
+                                <p class="description">
+                                    Completed specialized training in computer hardware servicing from 2016 to 2018. During this period, I immersed myself in the complexities of computer hardware and developed essential diagnostic and repair skills. This comprehensive program provided me with a solid foundation in hardware components, troubleshooting strategies, and system maintenance.
+                                </p>
+                                <div class="highlights">
+                                    <span class="highlight-tag">Hardware Repair</span>
+                                    <span class="highlight-tag">Troubleshooting</span>
+                                    <span class="highlight-tag">System Maintenance</span>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year">
-                                    <i class='bx bxs-calendar' ></i> 2016 - 2018
+                        <!-- Education Card 3 -->
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="year-badge">
+                                    <i class='bx bxs-calendar'></i>
+                                    <span>2012 - 2016</span>
                                 </div>
-
-                                <h3>CHS - Saint Joseph Institute of Technology</h3>
-                                <p>I studied computer hardware service from 2016 to 2018 as a student at Saint Joseph
-                                    Institute of Technology. I immersed myself in the complexities of computer hardware during
-                                    this time and developed useful diagnostic and repair abilities. I was able to build a solid
-                                    foundation in hardware components, troubleshooting strategies, and system maintenance
-                                    throughout my time at the institute, which prepared me for my later pursuits in the industry</p>
+                                <div class="status-badge completed">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title">Computer Hardware Servicing</h4>
+                                <h5 class="institution">Butuan City School Of Arts And Trades</h5>
+                                <p class="description">
+                                    Began my technical education journey from 2012 to 2016, studying computer hardware servicing. This foundational program introduced me to the fundamentals of computer hardware, where I developed practical diagnostic and repair abilities that would serve as the cornerstone for my future pursuits in the technology industry.
+                                </p>
+                                <div class="highlights">
+                                    <span class="highlight-tag">Hardware Fundamentals</span>
+                                    <span class="highlight-tag">Diagnostics</span>
+                                    <span class="highlight-tag">Technical Foundation</span>
+                                </div>
                             </div>
                         </div>
-
-                       
-
-                        <span class="animate scroll" style="--i:3;"></span>
                     </div>
                 </div>
 
-                <div class="education-column">
-                    <h3 class="title">Experience<span class="animate scroll" style="--i:5;"></span></h3>
-
-
-                    <div class="education-box">
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year">
-                                    <i class='bx bxs-calendar' ></i> 2022 - 2023
+                <!-- Experience Section -->
+                <div class="journey-section">
+                    <h3 class="section-title">
+                        <i class='bx bxs-briefcase'></i>
+                        Professional Experience
+                        <span class="animate scroll" style="--i:5;"></span>
+                    </h3>
+                    
+                    <div class="timeline-cards">
+                        <!-- Experience Card 1 -->
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="year-badge">
+                                    <i class='bx bxs-calendar'></i>
+                                    <span>2022 - 2023</span>
                                 </div>
-
-                                <h3>Web Developer - Navigatu</h3>
-                                <p>My team and I developed a specific website with a focus on user profiling for incubator
-                                    events. We carefully planned an easy-to-use interface and added tools for event
-                                    information, efficient registration, and unique attendee profiles. This project demonstrated
-                                    our capacity to offer a solution that is specifically designed for the incubator community.</p>
+                                <div class="status-badge completed">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title">Web Developer</h4>
+                                <h5 class="institution">Navigatu</h5>
+                                <p class="description">
+                                    Collaborated with a dynamic team to develop a specialized website focused on user profiling for incubator events. We meticulously designed an intuitive interface and implemented comprehensive tools for event information management, efficient registration processes, and unique attendee profile creation. This project showcased our ability to deliver tailored solutions for the incubator community.
+                                </p>
+                                <div class="highlights">
+                                    <span class="highlight-tag">Team Collaboration</span>
+                                    <span class="highlight-tag">User Profiling</span>
+                                    <span class="highlight-tag">Event Management</span>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year">
-                                    <i class='bx bxs-calendar' ></i> 2022 - 2023
+                        <!-- Experience Card 2 -->
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="year-badge">
+                                    <i class='bx bxs-calendar'></i>
+                                    <span>2022 - 2023</span>
                                 </div>
-
-                                <h3>Web Design - City Health Office</h3>
-                                <p>I decided to use Figma to create a website for the city health office as my thesis project. I
-                                    created a simple and user-friendly interface for the medical office by utilizing the many
-                                    features available in Figma. A thorough and user-friendly online platform for health-related
-                                    resources and information required careful consideration of information architecture,
-                                    graphic design features, and smooth navigation.</p>
+                                <div class="status-badge completed">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title">Web Designer</h4>
+                                <h5 class="institution">City Health Office (Thesis Project)</h5>
+                                <p class="description">
+                                    Designed and developed a comprehensive website for the City Health Office as my thesis project using Figma. Created an intuitive and user-friendly interface for the medical office, focusing on information architecture, graphic design elements, and seamless navigation to deliver a thorough and accessible online platform for health-related resources and information.
+                                </p>
+                                <div class="highlights">
+                                    <span class="highlight-tag">UI/UX Design</span>
+                                    <span class="highlight-tag">Figma</span>
+                                    <span class="highlight-tag">Health Information Systems</span>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="education-content">
-                            <div class="content">
-                                <div class="year">
-                                    <i class='bx bxs-calendar' ></i> 2021 - 2022
+                        <!-- Experience Card 3 -->
+                        <div class="timeline-card">
+                            <div class="card-header">
+                                <div class="year-badge">
+                                    <i class='bx bxs-calendar'></i>
+                                    <span>2021 - 2022</span>
                                 </div>
-
-                                <h3>Computer Hardware Servicing - Butuan Medical Center</h3>
-                                <p>I obtained practical experience in computer hardware servicing at the Butuan Medical
-                                    Center during my summer job. I was in charge of identifying, fixing, and keeping up
-                                    computer systems that were essential to the center's operations. This opportunity helped
-                                    me improve my problem-solving abilities and contributed to the smooth operation of the
-                                    center by allowing me to put my technical knowledge to use while also exposing me to the
-                                    crucial role technology plays in a medical setting</p>
+                                <div class="status-badge completed">Completed</div>
+                            </div>
+                            <div class="card-content">
+                                <h4 class="card-title">Computer Hardware Technician</h4>
+                                <h5 class="institution">Butuan Medical Center</h5>
+                                <p class="description">
+                                    Gained invaluable hands-on experience in computer hardware servicing during my summer employment at Butuan Medical Center. Responsible for diagnosing, repairing, and maintaining critical computer systems essential to the center's operations. This opportunity enhanced my problem-solving abilities while contributing to the smooth operation of vital medical technology infrastructure.
+                                </p>
+                                <div class="highlights">
+                                    <span class="highlight-tag">Hardware Maintenance</span>
+                                    <span class="highlight-tag">Medical Technology</span>
+                                    <span class="highlight-tag">Problem Solving</span>
+                                </div>
                             </div>
                         </div>
-
-                        <span class="animate scroll" style="--i:6;"></span>
                     </div>
                 </div>
             </div>
+
+            <span class="animate scroll" style="--i:6;"></span>
         </section>
 
-        <!--Skill Section-->
-
+        <!--Skills Section (Modern Grid Layout)-->
         <section class="skills" id="skills">
             <h2 class="heading">My <span>Skills</span><span class="animate scroll" style="--i:1;"></span></h2>
 
-            <div class="skills-row">
-                <div class="skills-column">
-                    <h3 class="title">Laravel Skills<span class="animate scroll" style="--i:2;"></span></h3>
-
-                    <div class="skills-box">
-                        <div class="skills-content">
-                            <div class="progress">
-                                <h3>React JS <span>90%</span></h3>
-                                    <div class="bar"><span></span></div>
+            <div class="skills-container">
+                <!-- Frontend Skills -->
+                <div class="skills-category">
+                    <div class="category-header">
+                        <i class='bx bx-code-alt'></i>
+                        <h3 class="category-title">Frontend Development</h3>
+                        <span class="animate scroll" style="--i:2;"></span>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-react"></i>
                             </div>
-
-                            <div class="progress">
-                                <h3>Git <span>80%</span></h3>
-                                    <div class="bar"><span></span></div>
-                            </div>
-
-                            <div class="progress">
-                                <h3>MySql <span>85%</span></h3>
-                                    <div class="bar"><span></span></div>
-                            </div>
-
-                            <div class="progress">
-                                <h3>Laravel <span>95%</span></h3>
-                                    <div class="bar"><span></span></div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">React JS</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 90%"></div>
+                                    </div>
+                                    <span class="level-text">90%</span>
+                                </div>
                             </div>
                         </div>
 
-                        <span class="animate scroll" style="--i:3;"></span>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-js-square"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">JavaScript</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 85%"></div>
+                                    </div>
+                                    <span class="level-text">85%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-html5"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">HTML5</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 95%"></div>
+                                    </div>
+                                    <span class="level-text">95%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-css3-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">CSS3</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 90%"></div>
+                                    </div>
+                                    <span class="level-text">90%</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
 
-                <div class="skills-column">
-                    <h3 class="title">Wordpress Skills<span class="animate scroll" style="--i:5;"></span></h3>
-
-                    <div class="skills-box">
-                        <div class="skills-content">
-                            <div class="progress">
-                                <h3>Web Design <span>95%</span></h3>
-                                    <div class="bar"><span></span></div>
+                <!-- Backend Skills -->
+                <div class="skills-category">
+                    <div class="category-header">
+                        <i class='bx bx-server'></i>
+                        <h3 class="category-title">Backend Development</h3>
+                        <span class="animate scroll" style="--i:3;"></span>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-laravel"></i>
                             </div>
-
-                            <div class="progress">
-                                <h3>Elementor<span>90%</span></h3>
-                                    <div class="bar"><span></span></div>
-                            </div>
-
-                            <div class="progress">
-                                <h3>SEO<span>85%</span></h3>
-                                    <div class="bar"><span></span></div>
-                            </div>
-
-                            <div class="progress">
-                                <h3>WooCommerce <span>95%</span></h3>
-                                    <div class="bar"><span></span></div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Laravel</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 95%"></div>
+                                    </div>
+                                    <span class="level-text">95%</span>
+                                </div>
                             </div>
                         </div>
 
-                        <span class="animate scroll" style="--i:6;"></span>
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-php"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">PHP</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 90%"></div>
+                                    </div>
+                                    <span class="level-text">90%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">MySQL</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 85%"></div>
+                                    </div>
+                                    <span class="level-text">85%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-python"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Python</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 80%"></div>
+                                    </div>
+                                    <span class="level-text">80%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- CMS & Tools -->
+                <div class="skills-category">
+                    <div class="category-header">
+                        <i class='bx bx-cog'></i>
+                        <h3 class="category-title">CMS & Tools</h3>
+                        <span class="animate scroll" style="--i:4;"></span>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-wordpress"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">WordPress</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 95%"></div>
+                                    </div>
+                                    <span class="level-text">95%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-git-alt"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Git</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 80%"></div>
+                                    </div>
+                                    <span class="level-text">80%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class='bx bxl-figma'></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Figma</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 85%"></div>
+                                    </div>
+                                    <span class="level-text">85%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class='bx bx-search-alt'></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">SEO</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 85%"></div>
+                                    </div>
+                                    <span class="level-text">85%</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Frameworks & Libraries -->
+                <div class="skills-category">
+                    <div class="category-header">
+                        <i class='bx bx-cube'></i>
+                        <h3 class="category-title">Frameworks & Libraries</h3>
+                        <span class="animate scroll" style="--i:5;"></span>
+                    </div>
+                    
+                    <div class="skills-grid">
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class="fab fa-bootstrap"></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Bootstrap</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 90%"></div>
+                                    </div>
+                                    <span class="level-text">90%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class='bx bxl-tailwind-css'></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Tailwind CSS</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 85%"></div>
+                                    </div>
+                                    <span class="level-text">85%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class='bx bx-shopping-bag'></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">WooCommerce</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 95%"></div>
+                                    </div>
+                                    <span class="level-text">95%</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="skill-card">
+                            <div class="skill-icon">
+                                <i class='bx bx-pen'></i>
+                            </div>
+                            <div class="skill-info">
+                                <h4 class="skill-name">Elementor</h4>
+                                <div class="skill-level">
+                                    <div class="level-bar">
+                                        <div class="level-fill" style="width: 90%"></div>
+                                    </div>
+                                    <span class="level-text">90%</span>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
+
+            <span class="animate scroll" style="--i:6;"></span>
         </section>
 
         <!--Contact Section Design-->
