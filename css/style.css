@@ -12,6 +12,26 @@
     font-family: 'Poppins', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
 }
 
+/* Screen reader only (visually hidden labels) */
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    white-space: nowrap;
+    border: 0;
+}
+
+/* Anchor-based project cards */
+a.project-card {
+    display: block;
+    color: inherit;
+    text-decoration: none;
+}
+
 :root {
 
     --bg-color: #081b29;
@@ -668,6 +688,11 @@ span {
     opacity: 1;
 }
 
+.project-overlay-visible {
+    opacity: 1;
+    background: linear-gradient(135deg, rgba(0, 171, 240, 0.9), rgba(8, 27, 41, 0.95));
+}
+
 .project-actions {
     text-align: center;
 }
@@ -965,13 +990,19 @@ span {
 
 
 /* Modern Education/Journey Section CSS */
-.education {
+.education,
+.experience {
     background: var(--bg-color);
     padding: 10rem 9% 5rem;
 }
 
-.education .heading {
+.education .heading,
+.experience .heading {
     margin-bottom: 5rem;
+}
+
+.experience {
+    background: var(--second-bg-color);
 }
 
 .journey-container {
@@ -1142,9 +1173,10 @@ span {
     transform: scale(1.05);
 }
 
-/* Responsive Design for Education Section */
+/* Responsive Design for Education & Experience Sections */
 @media (max-width: 1200px) {
-    .education {
+    .education,
+    .experience {
         padding: 8rem 5% 4rem;
     }
     
@@ -1158,7 +1190,8 @@ span {
 }
 
 @media (max-width: 768px) {
-    .education {
+    .education,
+    .experience {
         padding: 6rem 3% 3rem;
     }
     
@@ -1218,7 +1251,8 @@ span {
 }
 
 @media (max-width: 480px) {
-    .education {
+    .education,
+    .experience {
         padding: 5rem 2% 2rem;
     }
     
@@ -1797,6 +1831,7 @@ section:nth-child(odd) .animate.scroll,
 
 .about.show-animate .animate.scroll, 
 .education.show-animate .animate.scroll,
+.experience.show-animate .animate.scroll,
 .skills.show-animate .animate.scroll,
 .projects.show-animate .animate.scroll,
 .contact.show-animate .animate.scroll,
@@ -1932,7 +1967,8 @@ section:nth-child(odd) .animate.scroll,
         font-size: 5.2rem;
     }
 
-    .education {
+    .education,
+    .experience {
         padding: 10rem 4% 5rem 5%;
     }
 
@@ -2012,5 +2048,67 @@ section:nth-child(odd) .animate.scroll,
 @keyframes showRight {
     100% {
         width: 0;
+    }
+}
+
+/* Sticky Enquiry Button */
+.sticky-enquiry {
+    position: fixed;
+    bottom: 3rem;
+    right: 3rem;
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    background: linear-gradient(135deg, var(--main-color), #0099cc);
+    color: var(--bg-color);
+    padding: 1.2rem 2rem;
+    border-radius: 50px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    box-shadow: 0 5px 25px rgba(0, 171, 240, 0.4);
+    z-index: 99;
+    transition: all 0.3s ease;
+}
+
+.sticky-enquiry:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 30px rgba(0, 171, 240, 0.6);
+    background: linear-gradient(135deg, #0099cc, var(--main-color));
+}
+
+.sticky-enquiry i {
+    font-size: 2rem;
+    color: var(--bg-color);
+}
+
+.sticky-enquiry span {
+    color: var(--bg-color);
+}
+
+@media (max-width: 768px) {
+    .sticky-enquiry {
+        bottom: 2rem;
+        right: 2rem;
+        padding: 1rem 1.5rem;
+        font-size: 1.3rem;
+    }
+    
+    .sticky-enquiry i {
+        font-size: 1.8rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .sticky-enquiry span {
+        display: none;
+    }
+    
+    .sticky-enquiry {
+        padding: 1.2rem;
+        border-radius: 50%;
+        width: 50px;
+        height: 50px;
+        justify-content: center;
     }
 }

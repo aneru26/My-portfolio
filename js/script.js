@@ -46,15 +46,10 @@ window.onscroll = () => {
     navbar.classList.remove('active');
 
     //animation footer on scroll
-    // Add an event listener to the window to track scroll events
-window.addEventListener('scroll', function() {
     let footer = document.querySelector('footer');
-    let scrollTriggerPosition = 300; // Adjust this value as needed
-    let shouldShowAnimate = this.scrollY >= scrollTriggerPosition;
-
-    // Toggle the 'show-animate' class based on the condition
+    let scrollTriggerPosition = 300;
+    let shouldShowAnimate = window.scrollY >= scrollTriggerPosition;
     footer.classList.toggle('show-animate', shouldShowAnimate);
-});
 
 }
 
