@@ -59,7 +59,16 @@ const galleryImages = [
     ["images/sanitation_system/sanitation2.jfif", "images/sanitation_system/sanitation3.jfif", "images/sanitation_system/sanitation4.jfif","images/sanitation_system/sanitation5.jfif"],
     ["images/Advising_system/advising2.jfif", "images/Advising_system/advising3.jfif", "images/Advising_system/advising4.jfif"],
     ["images/eccommerce/eccommerce2.jfif", "images/eccommerce/eccommerce3.jfif","images/eccommerce/eccommerce4.jfif","images/eccommerce/eccommerce5.jfif"],
-    ["images/job_hunting/jobhunting2.jfif","images/job_hunting/jobhunting3.jfif","images/job_hunting/jobhunting4.jfif","images/job_hunting/jobhunting5.jfif","images/job_hunting/jobhunting6.jfif"]
+    ["images/job_hunting/jobhunting2.jfif","images/job_hunting/jobhunting3.jfif","images/job_hunting/jobhunting4.jfif","images/job_hunting/jobhunting5.jfif","images/job_hunting/jobhunting6.jfif"],
+    // Automation Projects
+    ["images/AI Automation Sample/automation1.png"],
+    ["images/AI Automation Sample/automation2.png"],
+    ["images/AI Automation Sample/automation3.png"],
+    ["images/AI Automation Sample/automation4.png"],
+    ["images/AI Automation Sample/automation5.png"],
+    ["images/AI Automation Sample/automation6.png"],
+    ["images/AI Automation Sample/automation7.png"],
+    ["images/AI Automation Sample/automation8.png"]
 ];
 
 function openGallery(index) {
@@ -101,3 +110,25 @@ document.addEventListener('DOMContentLoaded', function() {
         }
     });
 });
+
+// Project Tabs Functionality
+function openProjectTab(evt, tabName) {
+    // Find the parent section (projects, experience, or skills)
+    const parentSection = evt.currentTarget.closest('section');
+    
+    // Hide all tab contents within this section only
+    const tabContents = parentSection.getElementsByClassName("projects-tab-content");
+    for (let i = 0; i < tabContents.length; i++) {
+        tabContents[i].classList.remove("active");
+    }
+
+    // Remove active class from all tab buttons within this section only
+    const tabButtons = parentSection.getElementsByClassName("tab-btn");
+    for (let i = 0; i < tabButtons.length; i++) {
+        tabButtons[i].classList.remove("active");
+    }
+
+    // Show the selected tab and mark button as active
+    document.getElementById(tabName).classList.add("active");
+    evt.currentTarget.classList.add("active");
+}
