@@ -181,7 +181,7 @@ section{
 
 .home-content .text-animate{
     position: relative; 
-    width: 32.8rem;
+    width: 62rem;
 }
 
 .home-content .text-animate h3 {
@@ -193,7 +193,7 @@ section{
     background-repeat: no-repeat;
     -webkit-background-clip: text;
     background-clip: text; /* Add the standard property */
-    background-position: -33rem 0;
+    background-position: -62rem 0;
     
 }
 
@@ -630,7 +630,7 @@ span {
 /* Home Text Background Animation */
 @keyframes homeBgText {
     0%, 10%, 100% {
-        background-position: -33rem 0;
+        background-position: -62rem 0;
     }
     65%, 85% {
         background-position: 0 0;
@@ -2289,6 +2289,14 @@ section:nth-child(odd) .animate.scroll,
     html {
         font-size: 55%;
     }
+
+    .home-content .text-animate {
+        width: 55rem;
+    }
+
+    .home-content .text-animate h3 {
+        font-size: 2.8rem;
+    }
 }
 
 @media (max-width: 991px) {
@@ -2302,6 +2310,22 @@ section:nth-child(odd) .animate.scroll,
 
     .home {
         padding: 12rem 4% 4rem;
+    }
+
+    .home-content h1 {
+        font-size: 4.6rem;
+    }
+
+    .home-content .text-animate {
+        width: 48rem;
+    }
+
+    .home-content .text-animate h3 {
+        font-size: 2.4rem;
+    }
+
+    .home-content p {
+        font-size: 1.4rem;
     }
 
     .footer {
@@ -2392,6 +2416,33 @@ section:nth-child(odd) .animate.scroll,
         background: var(--bg-color);
         opacity: .6;
     }
+
+    .home-content h1 {
+        font-size: 4rem;
+    }
+
+    .home-content .text-animate {
+        width: 100%;
+    }
+
+    .home-content .text-animate h3 {
+        font-size: 2rem;
+    }
+
+    .home-content p {
+        font-size: 1.4rem;
+        margin: 1.5rem 0 3rem;
+    }
+
+    .btn-box {
+        width: 30rem;
+        height: 4.5rem;
+    }
+
+    .btn-box .btn {
+        width: 13rem;
+        font-size: 1.5rem;
+    }
     
     .tools-marquee-home {
         padding: 3rem 0 1.5rem;
@@ -2414,6 +2465,20 @@ section:nth-child(odd) .animate.scroll,
         width: 4rem;
         height: 4rem;
     }
+
+    .contact form {
+        max-width: 100%;
+    }
+
+    .contact form .input-box .input-field {
+        width: 100%;
+    }
+
+    .footer-content {
+        flex-direction: column;
+        text-align: center;
+        gap: 2rem;
+    }
 }
 
 @media (max-width: 520px) {
@@ -2422,10 +2487,34 @@ section:nth-child(odd) .animate.scroll,
     }
 
      .home-content h1 {
-
         display: flex;
         flex-direction: column;
-     }   
+        font-size: 3.6rem;
+     }
+
+     .home-content .text-animate {
+        width: 100%;
+     }
+
+     .home-content .text-animate h3 {
+        font-size: 1.8rem;
+     }
+
+     .home-content p {
+        font-size: 1.3rem;
+        margin: 1.5rem 0 2.5rem;
+     }
+
+     .btn-box {
+        width: 28rem;
+        height: 4.2rem;
+        gap: 1rem;
+     }
+
+     .btn-box .btn {
+        width: 12rem;
+        font-size: 1.4rem;
+     }
 
      .home-sci {
         width: 160px;
@@ -2462,12 +2551,40 @@ section:nth-child(odd) .animate.scroll,
         margin-top: 3rem;
      }
 
-     
+     .contact form .input-box {
+        flex-direction: column;
+     }
+
+     .contact form .input-box .input-field {
+        width: 100%;
+     }
 }
 
 @media (max-width: 462px) {
     .home-content h1 {
-        font-size: 5.2rem;
+        font-size: 3.2rem;
+    }
+
+    .home-content .text-animate h3 {
+        font-size: 1.6rem;
+    }
+
+    .home-content p {
+        font-size: 1.2rem;
+    }
+
+    .btn-box {
+        flex-direction: column;
+        width: 100%;
+        height: auto;
+        gap: 1.2rem;
+        align-items: flex-start;
+    }
+
+    .btn-box .btn {
+        width: 15rem;
+        height: 4.5rem;
+        font-size: 1.4rem;
     }
 
     .education,
@@ -2510,7 +2627,54 @@ section:nth-child(odd) .animate.scroll,
     }
 
     .home-content h1 {
-        font-size: 5rem;
+        font-size: 2.8rem;
+    }
+
+    .home-content .text-animate {
+        width: 100%;
+    }
+
+    .home-content .text-animate h3 {
+        font-size: 1.4rem;
+    }
+
+    .home-content p {
+        font-size: 1.1rem;
+        text-align: center;
+    }
+
+    .btn-box {
+        align-items: center;
+    }
+
+    .heading {
+        font-size: 2.6rem;
+    }
+
+    .about-content h3 {
+        font-size: 1.8rem;
+    }
+
+    .about-content p {
+        font-size: 1.3rem;
+    }
+
+    .tools-marquee-home .marquee-title {
+        font-size: 1.2rem;
+        letter-spacing: 1px;
+    }
+
+    .marquee-item img {
+        width: 2.5rem;
+        height: 2.5rem;
+    }
+
+    .marquee-item span {
+        font-size: 1rem;
+    }
+
+    .marquee-slider {
+        gap: 2rem;
     }
 }
 
@@ -2520,7 +2684,7 @@ section:nth-child(odd) .animate.scroll,
     0%,
     10%,
     100% {
-        background-position: -33rem 0;
+        background-position: -62rem 0;
     }
 
     65%,
